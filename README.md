@@ -31,7 +31,7 @@ All other software runs inside Docker containers.
 
 1. Git clone this repository:
 
-    `git clone https://github.com/apluslms/aplus-manual.git`
+    `git clone https://github.com/wldchld/k8s-plussa.git`
 
 2. Get A-plus-rst-tools: `git submodule update --init`
 

@@ -100,6 +100,7 @@ fi
 mkdir -p /tmp/aplus
 trap onexit INT
 docker-compose up & pid=$!
+cp -r my-docker-certs-client exercises/k8s/client-certs
 
 help_n=4 # show first info after 24 seconds
 while kill -0 $pid 2>/dev/null; do

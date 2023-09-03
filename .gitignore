@@ -15,3 +15,9 @@ _data/
 
 # editor
 .vscode
+
+# secrets
+exercises/k8s/client-certs
+my-docker-certs-ca/
+my-docker-certs-client/
+registry_certs/

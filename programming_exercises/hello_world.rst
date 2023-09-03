@@ -13,6 +13,18 @@ This is the configuration file ``docker-compose.yml``:
 
 Note: acos is an optional component used for interactive exercises.
 
+.. submit:: k8s_ex1 10
+  :config: exercises/k8s/config_ex1.yaml
+
+.. submit:: k8s_ex2 10
+  :config: exercises/k8s/config_ex2.yaml
+
+.. submit:: k8s_ex3 10
+  :config: exercises/k8s/config_ex3.yaml
+
+.. submit:: k8s_ex4 10
+  :config: exercises/k8s/config_ex4.yaml
+
 .. submit:: python 10
   :config: exercises/hello_python/config.yaml
 
