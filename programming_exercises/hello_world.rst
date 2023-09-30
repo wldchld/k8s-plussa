@@ -22,7 +22,7 @@ Note: acos is an optional component used for interactive exercises.
 .. submit:: k8s_ex3 10
   :config: exercises/k8s/config_ex3.yaml
 
-.. submit:: k8s_ex4 10
+.. submit:: k8s_ex4 15
   :config: exercises/k8s/config_ex4.yaml
 
 .. submit:: python 10

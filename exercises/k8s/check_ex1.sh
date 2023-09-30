@@ -1,16 +1,6 @@
 #!/bin/bash
 
-# Load kicbase image into docker
-docker load -i /mk/kicbase-image
-
-# Remove any existing minikube configs
-minikube delete --all --purge
-
-# Copy the minikube cache files from /mk folder into the correct minikube cache dir
-cp -r /mk/.minikube ~/
-
-# Start minikube
-minikube start --kubernetes-version=v1.25.3
+/exercise/setup_minikube.sh
 
 # Create a kubernetes deployment from the submission
 minikube kubectl -- create -f /submission/user/submission.yaml

@@ -1,0 +1,26 @@
+---
+title: Scaling own app in Kubernetes
+description: Not so simple grading example for Kubernetes
+instructions: |
+    <p>
+        NOT IMPLEMENTED! Just a possible idea..
+
+        In this exercise you must make your own web server and run multiple replicas of it on Kubernetes.
+
+        3.5.4	Salaisuudet ja säiliöiden välinen kommunikaatio
+
+        Viimeinen harjoitustehtävä käsittelee Kuberneteksen salaisuuksienhallintapalvelua ja Kubernetes-säiliöiden välistä kommunikaatiota. Opiskelijan tehtävänä on laajentaa aiemmin luotua omaa sovellusta lisäämällä siihen oikea tietokanta, johon muistilistan merkinnät tallennetaan.
+    </p>
+view_type: access.types.stdasync.acceptFiles
+files:
+  - field: appFile
+    name: app.js
+  - field: dockerFile
+    name: Dockerfile
+  - field: k8sConfig
+    name: k8sConfig.yaml
+
+container:
+  image: k8s-grader
+  mount: exercises/k8s
+  cmd: /exercise/run.sh ex5
