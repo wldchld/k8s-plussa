@@ -32,9 +32,9 @@ curl -s -i http://localhost:30021/quit > /dev/null
 sleep 10
 RESTART_COUNT=$(minikube kubectl -- get pods -l app=my-server-app --no-headers=true | awk '{s+=$4} END {print s}')
 
-echo REPLICA_COUNT=$REPLICA_COUNT (expected = 3)
-echo RUNNING_COUNT=$RUNNING_COUNT (expected = 3)
-echo RESTART_COUNT=$RESTART_COUNT (expected = 1)
+echo "REPLICA_COUNT=$REPLICA_COUNT (expected = 3)"
+echo "RUNNING_COUNT=$RUNNING_COUNT (expected = 3)"
+echo "RESTART_COUNT=$RESTART_COUNT (expected = 1)"
 
 # Final points are scaled to 0-15. Student gets 5 points for having the correct number
 # or replicas, another 5 points if they all have started and final 5 points
