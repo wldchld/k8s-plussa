@@ -8,12 +8,12 @@ instructions: |
     <p>
         You must implement a simple web server using NodeJS that responds to HTTP requests.
         You may use any libraries for this task, but the server's source code must be in a single file.
-        The file package.json can contain the depedencies you need. Even if you do not use any libraries,
+        The file package.json can contain the dependencies you need. Even if you do not use any libraries,
         you need to submit a valid package.json file.
     </p>
     <p>
         You must also supply a Dockerfile, which will create an image from your app that can be run
-        in a container. Remember to *install* the depedencies and supply the start start command for 
+        in a container. Remember to *install* the dependencies and supply the start start command for 
         the application. (Hint: node:18-alpine is a good base image.)
     </p>
     <p>

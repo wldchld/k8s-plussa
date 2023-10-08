@@ -18,9 +18,9 @@ instructions: |
         (Hint: The persistent volume claim should be a volume of the nginx-deployment.)
     </p>
     <p>
-      The custom content must be submitted as a separate HTML-file below. The file will be copied to
-      destination cluster's "/mnt/data" directory. Use this in your PersistentVolume configuration.
-      (Hint: PersistentVolume is "local" and the directory is a "hostPath". Size should not exceed 1Gi.)
+        The custom content must be submitted as a separate HTML-file below. The file will be copied to
+        destination cluster's "/mnt/data" directory. Use this in your PersistentVolume configuration.
+        (Hint: PersistentVolume is "local" and the directory is a "hostPath". Size should not exceed 1Gi.)
     </p>
     <p>
         Add all the required services and configurations to one Kubernetes YAML-config file and submit it
