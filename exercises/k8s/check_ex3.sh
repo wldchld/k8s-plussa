@@ -1,12 +1,17 @@
 #!/bin/bash
 
-/exercise/build-submitted-dockerfile.sh local-my-server my-server
+# Generate docker image tag from system time so each submission has an unique image
+REMOTE_TAG="$(date +%s%N)-server"
+/exercise/build-submitted-dockerfile.sh local-my-server $REMOTE_TAG
 
 /exercise/setup_minikube.sh
 
 # Uncomment, if you need to debug in the container
 # echo "started" >> minikube_started.txt
 # sleep 360000
+
+# Replace the tag name in the submitted file to the generated one
+sed -i "s+registry:5000/my-server+registry:5000/$REMOTE_TAG+g" k8sConfig.yaml
 
 # Create a kubernetes deployment from the submission
 minikube kubectl -- create -f /submission/user/k8sConfig.yaml
