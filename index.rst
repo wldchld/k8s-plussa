@@ -1,45 +1,46 @@
 :index-mode: toc
 :enrollment-audience: all
 :view-content-to: public
-:course-description: <h1>A+ Manual</h1>
+:course-description: <h1>K8s-plussa</h1>
     <p>
-    <b>This is the A+ manual for teachers that describes how to develop courses on the platform.</b>
-    The git repository of this course is available at
-    <a target="_blank" href="https://github.com/apluslms/aplus-manual">https://github.com/apluslms/aplus-manual</a>.
-    If you are new to A+, start from the first
-    <a data-aplus-chapter href="overview/overview/">introduction chapter</a>!
+    <b>This is a demo course for a master's thesis about running Kubernetes exercises on Plussa platform.</b>
     </p>
-    <p>See also:</p>
-    <ul>
-    <li><a target="_blank" href="https://github.com/apluslms/aplus-course-template">Template for new courses</a></li>
-    <li><a target="_blank" href="https://apluslms.github.io/">A+ project web site</a></li>
-    </ul>
+    <p>
+    The course is targeted for Tampere University's information technology students who are working on
+    their master's degree. You must have a tuni.fi-email to access this course and the additional resources.
+    This test course itself is not integrated to the Tampere University login system, so you will need
+    other credentials for this. They will be provided to you if you decide to help with the testing.
+    Reading the description and the material below is adviced, even if you do not have access to the course yet.
+    </p>
+    <p>
+    <b>S-group gift cards will be drawn among the volunteers.</b> Valid submissions for the exercises and
+    feedback about the provided material and the exercises are required to qualify for the raffle.
+    </p>
+    <p>
+    For the tasks you need to independently familiarize yourself with Kubernetes. On this course we will use
+    minikube to create a local Kubernetes cluster. You can use it in your own tests and it is used internally
+    by the grading component on this course. A VirtualBox image has been created for you already and it can
+    be found
+    <a href="https://tuni-my.sharepoint.com/:u:/g/personal/mikko_ollila_tuni_fi/ERn8yGfrgL5OkpFLLNOe27kBvxopu0WYY5ipNecYFF3cug" >
+    here</a>. You will need Oracle VirtualBox which can be downloaded from <a href="https://www.virtualbox.org/wiki/Downloads" >
+    virtualbox.org</a> or from
+    <a href="https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html?source=:ow:o:p:nav:mmddyyVirtualBoxHero&intcmp=:ow:o:p:nav:mmddyyVirtualBoxHero"
+    >oracle.com</a>. (The username and password for the test virtual machine are both student.)
+    </p>
+    <p>
+    To get started, you should check
+    <a href="https://tuni-my.sharepoint.com/:b:/g/personal/mikko_ollila_tuni_fi/ESD5RDOjzB9OvOz89nC5rgABVt6281eb5Gtj5wWnht7ZSQ?e=1L3U6Q" >
+    this document</a>. It was created to help primarily with exercise 4, but contains useful information to help
+    with the other tasks too. In the first two tasks you mainly need to create a Kubernetes manifest file which
+    described the deployment. See <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/" >this</a> for an example.
+    Tasks 3 and 4 require you to also make a simple Node.js app along with the manifest file.
+    </p>
 
 
-A+ Manual
-=========
-
-This index lists an entry for each learning module on course.
-Other content is not visible in A+.
+K8s-plussa
+==========
 
 .. toctree::
   :maxdepth: 2
 
-  overview/index
-  set_up_environment/index
-  rst_guide/index
-  style_aplus/index
-  questionnaires/index
   programming_exercises/index
-  acos/index
-  jutut/index
-  interactive_code/index
-  converting/index
-  lti/index
-  rubyric/index
-  admin/index
-  languages/index
-  moodle_astra/index
-  active_elements/index
-  point_of_interest/index
-  sphinx_extensions/index

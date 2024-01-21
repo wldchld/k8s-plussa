@@ -1,6 +1,0 @@
-Questionnaires
-==============
-
-.. toctree::
-
-  questionnaires

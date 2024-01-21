@@ -1,6 +1,0 @@
-Languages
-=========
-
-.. toctree::
-
-  languages
